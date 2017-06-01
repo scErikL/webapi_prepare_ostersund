@@ -8,6 +8,7 @@ using WebAPIPrepare.Models;
 
 using System.Web;
 using System.Web.Http;
+using Newtonsoft.Json;
 
 namespace WebAPIPrepare.Controllers
 {
@@ -79,6 +80,18 @@ namespace WebAPIPrepare.Controllers
            
             //Get();
         }
+
+        [HttpPost]
+        public void AddFromJson(String jsonObj)
+        {
+            Book b = JsonConvert.DeserializeObject<Book>(jsonObj);
+            int max = list.Max(x => x.ID);
+            b.ID = max + 1;
+            list.Add(b);
+
+            //Get();
+        }
+        
 
 
         /*
