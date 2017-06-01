@@ -34,9 +34,9 @@ namespace WebAPIPrepare.Controllers
         }
 
         // DELETE: api/TestAPI/5
-        public void Delete(int id)
+        public void Delete(Book b)
         {
-            Book b = new Book();
+            b.Author = "Test";
         }
     }
 }
