@@ -17,7 +17,9 @@ namespace WebAPIPrepare.Controllers
         public static List<Book> list = new List<Book>{
             new Book { Author = "Stephen King", Title = "IT", Description = "Horror", ISBN = "111", ID = 1 },
             new Book { Author = "Stephen King", Title = "Cujo", Description = "Horror", ISBN = "112", ID = 2 },
-            new Book { Author = "Stephen King", Title = "Scream", Description = "Horror", ISBN = "113", ID = 3 }
+            new Book { Author = "Stephen King", Title = "Scream", Description = "Horror", ISBN = "113", ID = 3 },
+            new Book { Author = "Michael Conelly", Title = "The Poet", Description = "Crime" ,ISBN = "114", ID = 4 },
+            new Book { Author = "Patricia Cornwall", Title = "Alice", Description = "Crime", ISBN = "115", ID = 5 }
         };
 
                
