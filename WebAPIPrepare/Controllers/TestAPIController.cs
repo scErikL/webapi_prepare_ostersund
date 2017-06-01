@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using WebAPIPrepare.Models;
 
 namespace WebAPIPrepare.Controllers
 {
@@ -35,6 +36,7 @@ namespace WebAPIPrepare.Controllers
         // DELETE: api/TestAPI/5
         public void Delete(int id)
         {
+            Book b = new Book();
         }
     }
 }
